@@ -1,7 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wirote Aroonmanakun</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      margin: 0;
+      background-color: #f7f4f1;
+    }
+    header {
+      background-color: #e3d9ce;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid #ccc;
+    }
+    nav {
+      background-color: #f3ede7;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #ddd;
+    }
+    .container {
+      padding: 20px;
+    }
+    .content {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    img.profile {
+      float: left;
+      margin-right: 20px;
+      width: 600px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>Wirote Aroonmanakun</header>
+  <nav>
+    <a href="#" onclick="showContent('home')">Home</a>
+    <a href="#" onclick="showContent('publications')">Publications</a>
+    <a href="https://awirote.medium.com/">Blogs</a>
+    <a href="#" onclick="showContent('videos')">Videos</a>
+    <a href="#" onclick="showContent('theses')">Supervised Theses</a>
+    <a href="#" onclick="showContent('resources')">Resources</a>
+  </nav>
+
+  <div class="container">
+    <div id="home" class="content active">
+      <img src="wirote.png" alt="Profile" class="profile">
+      <h2>ABOUT ME</h2>
+      <p><strong>Assoc.Prof. Wirote Aroonmanakun</strong></p>
+      <p>Director, Sirindhorn Thai Language Institute<br>
+      Chulalongkorn University<br>
+      Room 405, 4th floor, Chulawit 1 Building<br>
+Henri Dunant Road, Wangmai,<br>
+Pathum Wan, Bangkok 10330 Thailand<br></p>
+
+<p>Department of Linguistics (1996-2024)<br>
+      Faculty of Arts, Chulalongkorn University<br>
+      E-Mail: wirote.a@chula.ac.th, awirote@gmail.com</p>
+      <h3>EDUCATION:</h3>
+      <ul>
+        <li>B.Eng in Computer Engineering, Chulalongkorn University</li>
+        <li>M.A. in Linguistics, Chulalongkorn University</li>
+        <li>Ph.D. in Linguistics, Georgetown University</li>
+      </ul>
+    </div>
+
+    <div id="publications" class="content">
+      <h2>Publications</h2>
+      <iframe src="publications/index.html" style="width: 100%; height: 90vh; border: none;"></iframe>
+    </div>
+
+    <div id="videos" class="content">
+        <h2>Video Clips</h2>
+        <ul>
+            <li><a href="https://youtu.be/aPajvRJiaRI">How will AI reshape our world? (Movie Clips)</a></li>
+            <li><a href="https://youtu.be/ETOfAEj10Wg">Linguistics in Films and Documentaries</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://youtu.be/7yHzV4-LkEM">โครงการเสวนาออนไลน์ Share and Learn เรื่อง “AI กับการวิจัย”</a> วันพฤหัสบดีที่ 6 มีนาคม 2568 เวลา 19:00-20:00 น.</li>
+            <li><a href="https://youtu.be/6YQkHrJUfuQ?si=J8e_CSvNvV1-mi5B"> "จะ ‘งานวิชาการ’ หรือ ‘งานวิจัย’ ก็ลื่นไหลด้วย ChatGPT"</a>วันพุธที่ 6 พฤศจิกายน 2567</li>
+            <li><a href="https://www.facebook.com/share/v/1FTTPTaDxu/">Chula Lunch Talk: GenAI x งานวิจัย: 1 ปี ที่เปลี่ยนไป! Oct 11, 2024</a></li>
+            <li><a href="https://youtu.be/ZXjTxN-4aHk">วิดีโองานเกษียณ  คณะอักษรศาสตร์</a>2567</li>
+            <li><a href="https://youtu.be/SgBBNT1ZgD8">28 years later : till the end of the line</a> การบรรยายในโอกาสเกษียณอายุงาน ๓๐ สิงหาคม ๒๕๖๗  คณะอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</li>
+            <li><a href="https://youtu.be/ebVubuBUDIw">การบรรยาย หัวข้อ AI กับอนาคตการเรียนการสอนภาษาอังกฤษ  27 มิถุนายน 2567</a></li>
+            <li><a href="https://youtu.be/2uIamcKQAGg?si=9F3CGsWF57-PSfBu">ปาฐกถานำ หัวข้อ “มนุษยศาสตร์และสังคมศาสตร์ไทยกับปัญญาประดิษฐ์และความฉลาดทางดิจิทัล” </a>การประชุมวิชาการระดับชาติ “พหุศาสตร์บูรณาการสังคม" 4 มิ.ย. 2567</li>
+            <li><a href="https://www.facebook.com/share/v/192w1mwRCk/">วันนักแปลและล่ามครั้งที่ 17 | "ผลกระทบของ AI กับงานแปลและล่าม"</a>2 มิถุนายน 2567</li>
+            <li><a href="https://youtu.be/Y50WZ0g0fN4">ผลกระทบและท้าทายของ AI ต่อการสอนภาษา</a> 2 มีนาคม 2567, สัมมนาโครงการพัฒนาระบบการเรียนการสอนภาษา, หลักสูตรศึกษาศาสตร์มหาบัณฑิต  มหาวิทยาลัยรามคำแหง</li>
+            <li><a href="https://youtu.be/8mbb4VPcJyo">ChatGPT กับการทำงานวิจัยและการออกแบบการเรียนรู้</a>ChatGPT กับการทำงานวิจัยและการออกแบบการเรียนรู้, การบรรยายเมื่อ 20 ตุลาคม 2566, ฝ่ายวิจัยและจัดการความรู้ โรงเรียนสาธิตแห่งมหาวิทยาลัยธรรมศาสตร์</li>
+            <li><a href="https://youtu.be/CiilZH9b-l0?si=NjyhIeRsuLRUFn1W">รางวัลการวิจัยแห่งชาติ : รางวัลนักวิจัยดีเด่นแห่งชาติ ประจำปีงบประมาณ 2566</a></li>
+            <li><a href="https://youtu.be/fK0TA_e9iIQ">ChatGPT in Education</a>June 21, 2023</li>
+            <li><a href="https://www.facebook.com/share/v/14pvSwVzZQ/">ChatGPT ช่วยทำวิจัยได้ ไม่ต้องเหนื่อยแทบตาย (ในทุกขั้นตอน) May 24, 2023</a></li>
+            <li><a href="https://youtu.be/flJKb_Gk9XE">การบรรยาย ChatGPT : Impact on Research and Learning Experience</a> 15 พฤษภาคม 2566  จัดโดย สถาบันภาษา จุฬาลงกรณ์มหาวิทยาลัย</li>
+            <li><a href="https://youtu.be/LlCtHu3EKo0?si=JYvzTAcwtSrWmwUm">การเสวนาเรื่อง "ChatGPT: โอกาสและความท้าทายในการเรียนการสอนในโลกอนาคต"</a>วันจันทร์ที่ 26 ธันวาคม 2565</li>
+            <li><a href="https://www.facebook.com/share/v/1AHDAT5doQ/">AI กับอนาคตของศาสตร์ภาษาต่างประเทศ</a>การบรรยาย วันที่ 18 ธันวาคม 2564</li>
+        </ul>
+        <ul><h2>Play list</h2>
+            <li><a href="https://youtube.com/playlist?list=PLYntjgoOTelQBGQreFmlZ1BDa_D-hSo31&si=gDAKZpZKVQGXWX3v">AI poetry and music</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelSwJ9EpKlbmXL4bzr8fKPQJ">Linguistics Theories</a></li>
+            <li> Corpus Linguistics
+            <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelRpuM91cIay3STo6s5Mb02x">Corpus-Basic Tools </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelQhcmtCzeXefBqNveSltm7B">Intro to Corpus Ling</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelQCX8rkbBYMNEXD2VfkeS3K">AntConc</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelTyKOegDvlHGXzo4LiZURFI">Corpus-Wikipedia Corpus </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelTvVB7sGK3Eo8UZYgaErQE5">LancsBox</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelSJhvCfSHjzCdzuYLhSXn7c">Corpus and Translation</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelRxttQs2B0dEEbXfvre26bS">Corpus and NLP</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelSEo588MYN5JBI2Y2IpURJB">Corpus and Language Teaching</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelR88gu3b9IK3gf1Y777Twtf">Corpus and Discourse</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelTL4eBqrWycVhhBzv8yS-qe">Corpus Creation</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelRuknsLQVvIACikn7DBR-Li">Corpus Design</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelQwgCMBEsJlnerKxgsfRQpO">Corpus Annotation</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelRMuWD1X0pl9uVUYJds3e5P">Basic Statistics</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelST6c0pUH8Nylv7wMbssVZX">R</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelSNOTkVxDqKFOXtTnCSyVNg">UiPath-Basic</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelQxReGiJx1gcK2DHXEUL23m">UiPath-Details </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelShOemylu3U0LWQrAq4OiCQ">Corpus-Web scraping </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelTepxMX7oxAAyIx0AWU6Ifp">Corpus-FB scraping </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelSFWPNYjzTxZwxlCAcQHhC2">Corpus-Scraping tweets </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYntjgoOTelRmowWtB3aTpXnCSLJXpUha">RapidMiner </a></li>
+            </ul></li>
+        </ul>
+      </div>
+
+      <div id="theses" class="content">
+      <h2>Supervised Theses</h2>
+      <iframe src="theses/index.html" style="width: 100%; height: 90vh; border: none;"></iframe>
+    </div>
+
+    <div id="resources" class="content">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="http://pioneer.chula.ac.th/~awirote/resources/thai-transcription.html" title="Thai Transcription"><span class="in">Thai Transcription</span></a></li>
+        <li><a href="http://pioneer.chula.ac.th/~awirote/resources/thai-romanization.html" title="Thai Romanization"><span class="in">Thai Romanization</span></a></li>
+        <li><a href="http://pioneer.chula.ac.th/~awirote/resources/thai-word-segmentation.html" title="Thai Tokenization"><span class="in">Thai Tokenization</span></a></li>
+        <li><a href="http://pioneer.chula.ac.th/~awirote/resources/collocation-extract.html" title="Collocation Extract"><span class="in">Collocation Extract</span></a></li>
+        <li><a href="http://www.arts.chula.ac.th/~ling/tnc3/" title="Thai National Corpus"><span class="in">Thai National Corpus</span></a></li>
+        <li><a href="http://www.arts.chula.ac.th/~ling/ThaiConc/" title="Thai Concordance"><span class="in">Thai Concordance</span></a></li>
+        <li><a href="http://www.arts.chula.ac.th/~ling/TLE/" title="Thai Learner English Corpus"><span class="in">Thai Learner English Corpus</span></a></li>
+        <li><a href="http://www.arts.chula.ac.th/~ling/ParaConc/" title="Eng-Thai Concordance"><span class="in">Eng-Thai Concordance</span></a></li>
+        <li><a href="http://pioneer.chula.ac.th/~awirote/resources/corpora--data.html" title="Corpora &amp; Data"><span class="in">Corpora &amp; Data</span></a></li>
+        <li><a href="http://pioneer.chula.ac.th/~awirote/resources/misc.html" title="Misc."><span class="in">Misc.</span></a></li>
+    </ul>
+    </div>
+  </div>
+
+  <script>
+    function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(c => c.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
